@@ -1,0 +1,48 @@
+.container{ 
+	width: 1000px;
+}
+
+
+.trainImage { 
+	text-align: center;
+}
+
+
+#clock { 
+	color: white;
+}
+
+
+.jumbotron { 
+	background-color: #4E658D;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	height: 300px;
+ }
+
+
+h3 { 
+	color: white;
+ }
+
+
+.panel-title { 
+	color: #4E658D;
+	font-family: 'Poppins', sans-serif;
+ }
+
+
+.panel-default { 
+	border-width: 1px; 
+	border-style: solid;
+	border-color: #4E658D;
+}
+
+#dataentry { 
+	font-family: 'Poppins', sans-serif;
+
+}
+
+.panel-body { 
+	font-family: 'Poppins', sans-serif;
+}

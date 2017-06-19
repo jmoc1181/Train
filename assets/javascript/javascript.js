@@ -1,17 +1,27 @@
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyC5lzrS1nzvC90xwg29CiAyhjD9xHfMVp0",
+    apiKey: "",
     authDomain: "train-6ba6c.firebaseapp.com",
     databaseURL: "https://train-6ba6c.firebaseio.com",
     projectId: "train-6ba6c",
     storageBucket: "",
     messagingSenderId: "747406045119"
-  };
+};
   firebase.initializeApp(config);
 
 
   var database = firebase.database(); 
 
+  function displayTime() {
+    var time = moment().format('hh:mm:ss');
+    $('#clock').html(time);
+    setTimeout(displayTime, 1000);
+}
+
+$(document).ready(function() {
+    displayTime();
+
+});
 
 
   $("#submit-bid").on("click", function(event) {
@@ -35,14 +45,14 @@
   })
 });
 
-            database.ref().on("child_added", function(childSnapshot) { 
-            var name = childSnapshot.val().NAME;    
-            var place = childSnapshot.val().PLACE;
-            var frequency = childSnapshot.val().FREQUENCY;
-            var start = childSnapshot.val().START;
-            console.log(name);
-            console.log("START: " + start);
-            console.log("remainder ADDED: " + frequency);
+        database.ref().on("child_added", function(childSnapshot) { 
+        var name = childSnapshot.val().NAME;    
+        var place = childSnapshot.val().PLACE;
+        var frequency = childSnapshot.val().FREQUENCY;
+        var start = childSnapshot.val().START;
+        console.log(name);
+        console.log("START: " + start);
+        console.log("remainder ADDED: " + frequency);
 
 
             var firstTimeConverted = moment(start, "HH:mm");
