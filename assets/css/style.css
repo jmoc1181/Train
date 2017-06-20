@@ -5,6 +5,7 @@
 
 .trainImage { 
 	text-align: center;
+	margin-top: -50px;
 }
 
 
@@ -17,13 +18,20 @@
 	background-color: #4E658D;
 	color: white;
 	font-family: 'Poppins', sans-serif;
-	height: 300px;
+	height: 250px;
  }
 
 
 h3 { 
 	color: white;
  }
+
+
+th { 
+	font-family: 'Poppins', sans-serif;
+	color: #4E658D;
+
+ } 
 
 
 .panel-title { 
@@ -45,4 +53,6 @@ h3 {
 
 .panel-body { 
 	font-family: 'Poppins', sans-serif;
+	color: #4E658D;
+
 }
